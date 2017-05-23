@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msapplication-tap-highlight" content="no"/>
+		
+		<title>TEST</title>
+		
+		<!--======================================================
+			CSS Stylesheets
+		======================================================-->
+		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/animate.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/linea.css' >
+		<link rel='stylesheet' type='text/css' href='css/waves.min.css' >
+		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
+		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
+		<link rel='stylesheet' type='text/css' href='css/style.css' >
+	</head>
+	
+	<body>
+		
+		<!--======================================================
+			Preloader
+		======================================================-->
+		<div id='preloader' >
+			<div class='loader' >
+				<img src='img/loader.gif' alt>
+			</div>
+		</div>
+		
+		<!--======================================================
+			Navbar
+		======================================================-->
+		<nav class='navbar navbar-fixed-top' >
+			<div class='container' >
+				
+				<div class='navbar-header' >
+					
+					<button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#nav-collapse' aria-expanded='false'>
+						<span class='sr-only' >Toggle navigation</span>
+						<span class='icon-bar' ></span>
+						<span class='icon-bar' ></span>
+						<span class='icon-bar' ></span>
+					</button>
+					
+					<!--<a href='#' class='navbar-brand' >
+						<img class='logo-light' src='img/logo.png' alt>-->      <!--Logo here-->
+						<!--<img class='logo-dark' src='img/logo-dark.png' alt>          
+					<!--</a>-->
+					
+				</div>
+				
+				<div class='collapse navbar-collapse' id='nav-collapse' >
+					
+					<ul class='nav navbar-nav navbar-right' >
+						
+						<li class='active'>
+							<a href='#intro' data-scroll>Home</a>
+						</li>
+						
+						<li>
+							<a href='vr1.html'>Button1</a>
+						</li>
+						
+						<li>
+							<a href='#screenshots' data-scroll>Button2</a>
+						</li>
+						
+						<li>
+							<a href='#pricing' data-scroll>Button3</a>
+						</li>
+						
+						<li>
+							<a href='#download' data-scroll>Button4</a>
+						</li>
+						
+						<li>
+							<a href='#contact' data-scroll>Button5</a>
+						</li>
+						
+					</ul>
+					
+				</div>
+			</div>
+		</nav>	
+        <div id="menuspace" style=" height:100px; background:#202020;"></div>
+		<!--======================================================
+			Map Section
+		======================================================-->
+		<section id='features-1' class='mockup-section' >
+			<div class='container' >
+				<div class='row' >
+					
+                    <div id="map" style=" width:1500px; height:1200px"> </div>
+                    
+                    <div class="row">
+                        <button>Text</button>
+                    </div>
+					
+				</div>
+			</div>
+		</section>	
+        <script type="text/javascript">
+            function myMap() {
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(51.516063, 30.753227),
+                zoom: 15
+                };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            }
+        </script>
+		<!--======================================================
+			Footer
+		======================================================-->
+		<footer>
+			<div class='container' >
+				<div class='row' >
+					
+					<div class='col-sm-6' >
+						<p class='wow fadeInLeft' data-wow-delay='.2s' >
+							&copy; VCH
+						</p>
+					</div>
+					
+					<div class='col-sm-6' >
+						
+						<!-- Footer Social Icons -->
+						<ul class='footer-social wow fadeInRight' data-wow-delay='.2s' >
+							<li>
+								<a href='https://www.facebook.com/vitalyi.chernyavskii' >
+									<i class='ion-social-facebook' ></i>
+								</a>
+							</li>
+							<li>
+								<a href='#' >
+									<i class='ion-social-twitter' ></i>
+								</a>
+                            </li>
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!--======================================================
+			JavaScript Files
+		======================================================-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_MfQsVFtlafJYIT5AM0VtEk0MVBtz81g&callback=myMap"></script>
+		<script src='js/jquery.min.js' ></script>
+		<script src='bootstrap/js/bootstrap.min.js' ></script>
+		<script src='js/jquery.magnific-popup.min.js' ></script>
+		<script src='js/jquery.ajaxchimp.min.js' ></script>
+		<script src='js/parallax.min.js' ></script>
+		<script src='js/particles.min.js' ></script>
+		<script src='js/waves.min.js' ></script>
+		<script src='js/owl.carousel.min.js' ></script>
+		<script src='js/wow.min.js' ></script>
+		<script src='js/validator.min.js' ></script>
+		<script src='js/smooth-scroll.min.js' ></script>
+		<script src='js/script.js' ></script>
+	</body>
+</html>
